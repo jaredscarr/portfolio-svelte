@@ -4,6 +4,8 @@
   import { initializeStores, AppShell, Drawer, AppBar, getDrawerStore, LightSwitch } from "@skeletonlabs/skeleton";
   import { Github, Linkedin, Menu } from "lucide-svelte";
 
+  export const prerender = true;
+
   initializeStores();
 
   const drawerStore = getDrawerStore();
