@@ -84,14 +84,11 @@
     </h2>
     <p class="mb-10 tracking-wide leading-relaxed">Not all my work is in the public domain. This is collection of my personal work that includes applications, group projects, university course work, and documentation. Thanks for looking!</p>
 
-    <div class="grid grid-cols-[auto_1fr_auto] gap-4 items-center">
-      <button type="button" class="btn-icon variant-filled" on:click={multiColumnLeft}>
-        <ArrowBigLeft />
-      </button>
+    <div class="grid grid-cols-[auto_1fr_auto] gap-1 items-center">
       <!-- Carousel -->
-      <div bind:this={elemProjects} class="snap-x snap-mandatory scroll-smooth flex gap-2 pb-2 overflow-x-auto mb-20">
+      <div bind:this={elemProjects} class="snap-x snap-mandatory scroll-smooth flex gap-2 pb-2 overflow-x-auto mb-4">
         {#each projects as project}
-          <div class="snap-start shrink-0 card-hover variant-glass-surface py-0 w-44 md:w-80 text-center">
+          <div class="snap-start shrink-0 card-hover variant-glass-surface py-0 w-72 md:w-80 text-center">
             <header class="card-header mb-1">
               <h5 class="h5 text-tertiary-500-400-token">{project.title}</h5>
             </header>
@@ -111,9 +108,18 @@
           </div>
         {/each}
       </div>
-      <button type="button" class="btn-icon variant-filled" on:click={multiColumnRight}>
-        <ArrowBigRight />
-      </button>
+    </div>
+    <div class="container flex mb-20">
+      <div>
+        <button type="button" class="btn-icon variant-filled" on:click={multiColumnLeft}>
+          <ArrowBigLeft />
+        </button>
+      </div>
+      <div class="ml-auto">
+        <button type="button" class="btn-icon variant-filled" on:click={multiColumnRight}>
+          <ArrowBigRight />
+        </button>
+      </div>
     </div>
   </div>
   {/if}
