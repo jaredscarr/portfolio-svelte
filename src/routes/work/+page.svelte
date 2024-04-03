@@ -1,5 +1,4 @@
 <script lang="ts">
-  import Logo from '$lib/components/Logo.svelte';
   import { fly } from 'svelte/transition';
   import { backOut } from "svelte/easing";
   import { onMount } from "svelte";
@@ -7,45 +6,45 @@
   const projects = [
     {
       id: 1,
-      title: "Deck.gl Contribution",
+      title: "Deck.gl Open Source Contribution",
       url: "https://github.com/visgl/deck.gl/pull/8545",
-      imgUrl: "arcgis-screenshot-1.png",
+      imgUrl: "work/arcgis-screenshot-1.png",
     },
     {
       id: 2,
       title: "Swiss Tournament Style API",
       url: "https://github.com/jaredscarr/swiss-tournament",
-      imgUrl: "swiss-tournament.png",
+      imgUrl: "work/swiss-tournament.png",
     },
     {
       id: 3,
       title: "Sandra Creative Artist Blog",
       url: "https://sandracreative.com",
-      imgUrl: "sandracreative.png",
+      imgUrl: "work/sandracreative.png",
     },
     {
       id: 4,
       title: "Computer Science Club Website",
       url: "https://northcs.org",
-      imgUrl: "northcs.png",
+      imgUrl: "work/northcs.png",
     },
     {
       id: 5,
       title: "Computer Science Club Workbook",
       url: "https://nsccs.github.io/",
-      imgUrl: "workbook.png",
+      imgUrl: "work/workbook.png",
     },
     {
       id: 6,
       title: "Retro Games Open Collaboration",
       url: "https://github.com/nsccs/pygames",
-      imgUrl: "conways.png",
+      imgUrl: "work/conways.png",
     },
     {
       id: 7,
       title: "Page Replacement Experiment",
       url: "https://github.com/jaredscarr/page-replacement",
-      imgUrl: "page-replacement.png",
+      imgUrl: "work/page-replacement.png",
     }
   ]
 
@@ -69,7 +68,7 @@
     >
       Work
     </h2>
-    <p class="mb-10 tracking-wide leading-relaxed">Not all my work is in the public domain. This is collection of my personal work that includes applications, group projects, university course work, and documentation. Thanks for looking!</p>
+    <p class="mb-10 tracking-wide leading-relaxed">Not all my work is in the public domain. This collection includes open-source contributions, personal projects, and university course work. Thanks for looking!</p>
     <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-20">
       {#each projects as project}
       <a
@@ -89,5 +88,4 @@
     </section>
   </div>
   {/if}
-  <Logo />
 </section>
