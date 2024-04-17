@@ -24,13 +24,18 @@
           <Menu />
         </button>
       </svelte:fragment>
-      <div class="invisible sm:visible text-center">
-        <h6 class="h6 tracking-widest">Software Development Engineer</h6>
-      </div>
       <svelte:fragment slot="trail">
         <LightSwitch />
-        <a href="https://github.com/jaredscarr" class="btn-icon hover:bg-secondary-400-500-token" data-sveltekit-preload-data="hover"><Github /></a>
-        <a href="https://www.linkedin.com/in/jaredscarr" class="btn-icon hover:bg-secondary-400-500-token" data-sveltekit-preload-data="hover"><Linkedin /></a>
+        <a href="https://github.com/jaredscarr"
+           class="btn-icon hover:bg-secondary-400-500-token"
+           data-sveltekit-preload-data="hover">
+          <Github />
+        </a>
+        <a href="https://www.linkedin.com/in/jaredscarr"
+           class="btn-icon hover:bg-secondary-400-500-token"
+           data-sveltekit-preload-data="hover">
+          <Linkedin />
+        </a>
       </svelte:fragment>
     </AppBar>
     <Drawer>
@@ -39,6 +44,7 @@
           <li><a href="/" data-sveltekit-preload-data="hover" on:click={() => drawerStore.close()}>Home</a></li>
           <li><a href="/about" data-sveltekit-preload-data="hover" on:click={() => drawerStore.close()}>About</a></li>
           <li><a href="/work" data-sveltekit-preload-data="hover" on:click={() => drawerStore.close()}>Work</a></li>
+          <li><a href="/writing" data-sveltekit-preload-data="hover" on:click={() => drawerStore.close()}>Writing</a></li>
         </ul>
       </nav>
     </Drawer>
