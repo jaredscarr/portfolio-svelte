@@ -1,5 +1,5 @@
 <script lang="ts">
-
+  import ConnectButton from "$lib/ConnectButton.svelte";
 </script>
 
 <svelte:head>
@@ -15,7 +15,7 @@
     <p class="mb-36 font-bold tracking-wide">
       Full Stack Software Development Engineer based out of Seattle, Washington.
     </p>
-    <a class="btn btn-sm variant-filled-secondary font-extrabold" href="https://www.linkedin.com/in/jaredscarr" data-sveltekit-preload-data="hover">Connect</a>
+    <ConnectButton />
   </div>
 </section>
 

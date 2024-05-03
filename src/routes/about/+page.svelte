@@ -2,7 +2,7 @@
   import { onMount } from "svelte";
   import { fly } from 'svelte/transition';
   import { backOut } from 'svelte/easing';
-
+  import ConnectButton from "$lib/ConnectButton.svelte";
 
   let animate = false;
   onMount(() => {
@@ -25,8 +25,14 @@
     >
       About Me
     </h2>
-    <p class="tracking-wide leading-relaxed">I switched careers after a bootcamp experience in 2016, worked for a few years, then returned to university to complete a computer science degree. I am an active member of the university computer science club and have started a few open source projects for the organization to encourage students at all levels of experience to collaborate in a fun and safe environment. I am eager to learn, build, and mentor others as I navigate the vast and exciting world of technology.
+    <p class="tracking-wide leading-relaxed mb-10">I am a dedicated and versatile Software Developer with a passion for creating impactful solutions through technology. With over three years of experience, I've honed my skills in building MVC web applications, Python scripting, and ETL processes. My technical toolkit includes proficiency in Python, Java, and client-side JavaScript, along with expertise in a variety of frameworks and tools.
     </p>
+    <p class="tracking-wide leading-relaxed mb-20">
+      With a strong foundation in both theory and practical application, I thrive in collaborative environments where I can contribute my skills and continue to learn. Let's connect and explore how we can work together!
+    </p>
+    <div class="container text-center">
+      <ConnectButton />
+    </div>
     {/if}
   </div>
   <div class="container max-w-sm mx-auto px-10 sm:px-100 pb-20 sm:pb-40">
