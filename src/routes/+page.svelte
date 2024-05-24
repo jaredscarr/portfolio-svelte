@@ -4,7 +4,7 @@
 
 <svelte:head>
   <title>Home</title>
-  <meta name="description" content="jaredscarr.com - portfolio" />
+  <meta name="Personal Website for Jared Scarr" content="jaredscarr.com - portfolio" />
 </svelte:head>
 
 <section>

@@ -6,6 +6,12 @@
   const projects = [
     {
       id: 1,
+      title: "Seattle Shows Web Scraper",
+      url: "https://seattle-shows.jaredscarr.com",
+      imgUrl: "work/seattle-shows.png",
+    },
+    {
+      id: 1,
       title: "Deck.gl Open Source Contribution",
       url: "https://github.com/visgl/deck.gl/pull/8545",
       imgUrl: "work/arcgis-screenshot-1.png",
