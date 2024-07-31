@@ -1,8 +1,9 @@
 <script lang="ts">
   import { onMount } from "svelte";
-  import { fly } from 'svelte/transition';
-  import { backOut } from 'svelte/easing';
+  import { fly } from "svelte/transition";
+  import { backOut } from "svelte/easing";
   import ConnectButton from "$lib/ConnectButton.svelte";
+  import headshot from "$lib/assets/headshot.jpg";
 
   let animate = false;
   onMount(() => {
@@ -36,6 +37,6 @@
     {/if}
   </div>
   <div class="container max-w-sm mx-auto px-10 sm:px-100 pb-20 sm:pb-40">
-    <img class="h-auto max-w-full rounded-full" src="head-shot-small.jpg" alt="Head shot of Jared Scarr">
+    <img class="h-auto max-w-full rounded-full" src={headshot} alt="Head shot of Jared Scarr">
   </div>
 </section>
